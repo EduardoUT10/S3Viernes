@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S3Viernes.Page3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario"
+                   TextColor="Red"
+                   FontSize="16"
+                   HorizontalTextAlignment="End"
+            />
+            <Label 
+                    Text="Ventana 3"
+                   FontSize="24"
+                   HorizontalTextAlignment="Center"
+            />
+            <Entry
+                x:Name="entryDato"
+                IsEnabled="False"
+            />
+            <Entry
+                x:Name="entryAlumno"
+                IsEnabled="False"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

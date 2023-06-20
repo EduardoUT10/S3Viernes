@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S3Viernes.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label 
+                x:Name="lblUsuario" 
+                TextColor="Red"
+                FontSize="16"
+                HorizontalTextAlignment="End"    
+            />
+            <Label 
+                Text="Ventana dos"
+                FontSize="24"
+                HorizontalTextAlignment="Center"    
+            />
+            <Entry
+                x:Name="txtDato"
+                Placeholder="Ingrese un valor numérico del 1 al 100"
+                Keyboard="Numeric"
+                TextChanged="txtDato_TextChanged"
+            />
+            <Picker
+                x:Name="pkAlumnos"
+            >
+                <Picker.Items>
+                    <x:String>Renato</x:String>
+                    <x:String>Carlos</x:String>
+                    <x:String>Carmen</x:String>
+                    <x:String>José</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button
+                x:Name="btnAbrir"
+                Text="Abrir Ventana 3"
+                Clicked="btnAbrir_Clicked"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
